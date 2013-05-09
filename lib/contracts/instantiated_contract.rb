@@ -1,5 +1,6 @@
 module Contracts
   class InstantiatedContract
+    attr_accessor :request
     attr_reader :response_body
 
     def initialize(request, response)

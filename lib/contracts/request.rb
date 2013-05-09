@@ -17,6 +17,10 @@ module Contracts
       @definition['path']
     end
 
+    def path=(value)
+      @definition['path'] = value
+    end
+
     def headers
       @definition['headers']
     end
