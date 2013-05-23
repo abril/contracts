@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'contracts/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "contracts"
+  gem.name          = "contracts_api_test"
   gem.version       = Contracts::VERSION
-  gem.authors       = ["ThoughtWorks VejaSP"]
-  gem.email         = ["abril_vejasp_dev@thoughtworks.com"]
+  gem.authors       = ["Abril Midia", "ThoughtWorks"]
+  gem.email         = ["vejasp-dev@abril.com.br", "abril_vejasp_dev@thoughtworks.com"]
   gem.description   = %q{Consumer-Driven Contracts}
-  gem.summary       = %q{Consumer-Driven Contracts}
+  gem.summary       = %q{Consumer-Driven Contracts Gem}
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -24,7 +24,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "addressable"
 
   gem.add_development_dependency "rake"
-  gem.add_development_dependency "ruby-debug"
   gem.add_development_dependency "rspec"
   gem.add_development_dependency "guard-rspec"
 end
